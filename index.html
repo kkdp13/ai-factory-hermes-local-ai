@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ai_factory · Hermes + AI PC (law ตรวจแล้ว)</title>
+<style>
+:root{--bg:#f7f5f0;--card:#fff;--ink:#1f2328;--mute:#5d646d;--line:#e4e0d8;--accent:#0f6e6e;--warn:#9a5b00;--bad:#a12d2d;--ok:#2d7a3a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,"Sukhumvit Set","Noto Sans Thai",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:1.6rem;margin:.2rem 0}h2{font-size:1.25rem;margin:2.2rem 0 .6rem;border-bottom:2px solid var(--line);padding-bottom:.3rem}
+h3{font-size:1.02rem;margin:1.1rem 0 .3rem}
+.sub{color:var(--mute);margin:0 0 1rem}.tag{display:inline-block;font-size:.78rem;padding:2px 8px;border-radius:99px;background:#e3f3e6;color:var(--ok);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0;overflow-x:auto}
+.big{font-size:1.05rem}.key{border-left:4px solid var(--accent)}.alert{border-left:4px solid var(--warn)}.stop{border-left:4px solid var(--bad)}
+.unk{border:2px dashed var(--warn);background:#fff8ec}
+table{width:100%;border-collapse:collapse;font-size:.92rem}th,td{text-align:left;vertical-align:top;padding:8px 6px;border-bottom:1px solid var(--line)}th{color:var(--mute);font-weight:600}
+ul,ol{padding-left:1.2rem;margin:.3rem 0}li{margin:.25rem 0}
+.ok{color:var(--ok);font-weight:600}.warn{color:var(--warn);font-weight:600}.bad{color:var(--bad);font-weight:600}
+small{color:var(--mute)}code{background:#eef1f4;padding:1px 5px;border-radius:5px;font-size:.88em;word-break:break-all}
+blockquote{margin:.5rem 0;padding:.3rem .8rem;border-left:3px solid var(--line);color:var(--mute)}
+a{color:var(--accent);word-break:break-all}
+.answer{background:#0f6e6e;color:#fff;border-radius:12px;padding:16px 18px;margin-top:18px}
+@media(max-width:600px){table{font-size:.85rem}main{padding:20px 12px 50px}}
+</style>
+</head>
+<body><main>
+<span class="tag">law ตรวจแล้ว (ยกเว้นหัวข้อ 10 ร่างของทีม และข้อที่ติดป้ายในหัวข้อ 11)</span>
+<h1>ai_factory · Hermes + AI PC</h1>
+<p class="sub">สรุปผลหาข้อมูลสำหรับพี่ Foxx · 25 พ.ย. 2026 · ใช้เฉพาะข้อที่ law ผ่านหรือแก้แล้ว ยกเว้นหัวข้อ 10 (ร่างของทีม) และข้อที่ติดป้ายในหัวข้อ 11 · ข้อที่ยังไม่ยืนยันอยู่ในกล่องประ (หัวข้อ 11) · ตัวเลขความเร็วบน RTX 5070 ยังไม่มีใครวัด</p>
+
+<h2>1 · สรุป 1 หน้า</h2>
+<div class="card key big"><ul>
+<li><b>Hermes ที่พี่เจอ = Hermes Agent</b> (NousResearch/hermes-agent) รุ่นเสถียรล่าสุด <b>v0.23.4</b> (24 พ.ย. 2026) · license MIT · ลงบน Windows ตรงๆ ได้ (Tier 1)</li>
+<li><b>LLM ให้ใช้แพ็กเกจ ChatGPT:</b> OpenAI ลิสต์ Hermes Agent ไว้ใน "Apps with ChatGPT plan usage" · ทางที่แนะนำคือ Nous Portal แล้วกด "Continue with ChatGPT" · ความเสี่ยงโดนแบน: <span class="ok">ต่ำ</span> <b>เฉพาะทาง Nous Portal</b> · ทาง Codex device-code <span class="warn">❓ ยังไม่ยืนยัน</span></li>
+<li><b>ห้ามต่อ Claude แบบ native login:</b> Hermes "routes as Claude Code" และยืม login ของ Claude Code · ขัดหน้า legal ของ Anthropic · ความเสี่ยง <span class="bad">กลาง–สูง</span> และอาจทำให้ login ของ Claude Code ทั้งทีมใช้ไม่ได้</li>
+<li><b>DirectSDK plugin</b> (<code>claude-subscription-directsdk</code>): ความเสี่ยง <span class="warn">กลาง</span> · ห้ามใช้กับบัญชี Claude หลักของพี่</li>
+<li><b>ทางปลอดภัยถ้าอยากใช้ Claude:</b> API key (ผูก Console org) + เครดิตรายเดือนของแพ็กเกจ <b>Max $100</b> (Ultra $200 · Pro ไม่มี)</li>
+<li><b>วิดีโอ:</b> ComfyUI <b>v0.46.0</b> + <b>Wan 2.2</b> (Apache-2.0) เป็นตัวหลัก · <b>MiniMax H3</b> ความเสี่ยง <span class="ok">ต่ำมีเงื่อนไข</span> และ <b>ไม่ต้องซื้อ license ถ้ารายได้ต่ำกว่า $20M</b> · <b>LongCat</b> (MIT) เป็นตัวเลือกเสริม</li>
+<li><b>จำหน้าตัวละคร:</b> เทรน LoRA บนโมเดลภาพ → ทำ keyframe → ส่งเข้า Wan I2V · ต้องมีหนังสือยินยอมของเจ้าของใบหน้า</li>
+<li><b>โพสต์จริงให้คนกดเอง</b> · Hermes ไม่ควรถือรหัสโพสต์/ยิงโฆษณา</li>
+<li><b>พี่ต้องตัดสิน:</b> (1) ความเสี่ยง H3 = <b>ยอมรับแล้ว</b> เมื่อ 25 พ.ย. 2026 (ยังต้องทำตามเงื่อนไขหัวข้อ 6) · (2) ใช้ ChatGPT ผ่าน Nous Portal หรือไม่ · (3) เลือก TTS จ่ายเงินตัวไหน</li>
+</ul></div>
+
+<div class="card"><h3>ศัพท์ที่เจอในหน้านี้</h3><ul>
+<li><b>native login</b> = ล็อกอินบัญชี Claude ตรงๆ ผ่านโปรแกรมที่ไม่ใช่ของ Anthropic เอง</li>
+<li><b>VRAM</b> = หน่วยความจำของการ์ดจอ (RTX 5070 มี 12 GB)</li>
+<li><b>LoRA</b> = ไฟล์เล็กที่สอนโมเดลภาพ/วิดีโอให้จำหน้าหรือสไตล์เฉพาะ</li>
+<li><b>keyframe</b> = ภาพนิ่งตั้งต้นของช็อต ใช้เป็นภาพเริ่มให้โมเดลวิดีโอ</li>
+<li><b>I2V / R2V</b> = สร้างวิดีโอจากรูป / จากรูปอ้างอิง</li>
+<li><b>GGUF</b> = ไฟล์โมเดลแบบบีบอัด ใส่การ์ดเล็กได้</li>
+<li><b>NVFP4</b> = รูปแบบตัวเลขแบบประหยัดของการ์ด RTX 50 ทำให้เร็วขึ้น</li>
+<li><b>SageAttention</b> = ตัวเร่งความเร็วของโมเดล ที่บางกรณีทำให้ภาพดำ</li>
+<li><b>refresh token</b> = กุญแจที่ต่ออายุการล็อกอินอัตโนมัติ ถ้าถูกยืมไปหมุนอาจทำให้ของเจ้าของใช้ไม่ได้</li>
+<li><b>cron</b> = ตัวตั้งเวลาให้งานรันเองตามรอบ</li>
+</ul></div>
+
+<h2>2 · สเปกเครื่อง</h2>
+<div class="card"><table>
+<tr><th>ชิ้นส่วน</th><th>รายละเอียด</th></tr>
+<tr><td>CPU</td><td>Core Ultra 285K</td></tr>
+<tr><td>เมนบอร์ด</td><td>MSI MPG Z890I EDGE TI WIFI · M.2 รวม 4 ช่อง (1× Gen5 x4 + 3× Gen4 x4 · <b>หนึ่งช่องต้องใช้การ์ด XPANDER ที่แถมมา</b>) <small>(ยืนยันจาก datasheet MSI · อย่าสับสนกับรุ่น ATX Z890 EDGE TI)</small></td></tr>
+<tr><td>GPU</td><td>RTX 5070 12 GB</td></tr>
+<tr><td>RAM</td><td>64 GB DDR5</td></tr>
+<tr><td>SSD</td><td>2 TB</td></tr>
+<tr><td>OS</td><td>Windows 11 Pro</td></tr>
+</table></div>
+<div class="card"><h3>พื้นที่ดิสก์ที่ต้องใช้ (ประมาณ)</h3>
+<table>
+<tr><th>รายการ</th><th>ขนาด</th></tr>
+<tr><td>ComfyUI + custom nodes</td><td>15–25 GB</td></tr>
+<tr><td>Wan 2.2 ทั้งชุด</td><td>35–45 GB</td></tr>
+<tr><td>LongCat-Video</td><td>~30 GB</td></tr>
+<tr><td>LTX-2.5</td><td>~30 GiB</td></tr>
+<tr><td>H3 (ถ้าใช้; เพิ่ม H3-Tiny ได้)</td><td>45–62 GiB</td></tr>
+<tr><td>LongCat-Video-Avatar</td><td>~24 GiB</td></tr>
+<tr><td>โมเดลภาพ</td><td>30–60 GB</td></tr>
+<tr><td>LLM สำรอง</td><td>~30 GB</td></tr>
+<tr><td>TTS</td><td>&lt;5 GB</td></tr>
+<tr><td>ข้อมูล LoRA + checkpoint</td><td>20–50 GB</td></tr>
+<tr><td>ผลงาน + cache ซ้ำ</td><td>100–200 GB</td></tr>
+<tr><td>Pagefile</td><td>32–64 GB</td></tr>
+</table>
+<small>ขั้นต่ำ 1 TB NVMe · สบายคือไดรฟ์ระบบ + NVMe 2 TB อีกลูกสำหรับโมเดล · ขนาดไฟล์เป็นค่าประมาณจาก vegapunk (law ไม่ได้ตรวจขนาดไฟล์)</small></div>
+
+<h2>3 · Hermes Agent</h2>
+<div class="card"><h3>ทำอะไรได้</h3><ul>
+<li>เครื่องมือ 40+ ตัว · จำเรื่องที่ทำ · สร้าง skill เองหลังงานซับซ้อน · cron ตั้งเวลา · แตก subagent ขนาน</li>
+<li>เชื่อมแชท Telegram, Discord, Slack, WhatsApp, Signal, Email</li>
+<li>ใช้โมเดลได้ราว 50 ผู้ให้บริการ รวมถึง Ollama / llama.cpp บนเครื่อง</li>
+<li>ติดตั้ง: <code>iex (irm https://hermes-agent.nousresearch.com/install.ps1)</code> · ข้อมูลอยู่ที่ <code>%LOCALAPPDATA%\hermes\</code></li>
+<li><b>ซอฟต์แวร์ใหม่ เปลี่ยนเร็ว:</b> ปล่อยรุ่นทุกไม่กี่วัน · มี CVE หลายตัวในปี 2026 · ให้ปักรุ่น v0.23.4 และอัปเดตเมื่อพี่สั่งเท่านั้น</li>
+</ul></div>
+<div class="card"><h3>ใช้ subscription ไหนได้บ้าง</h3>
+<table>
+<tr><th>ทาง</th><th>ความเสี่ยง</th><th>ค่าใช้จ่าย / หมายเหตุ</th></tr>
+<tr><td><b>ChatGPT plan</b> (Nous Portal → "Continue with ChatGPT")</td><td class="ok">ต่ำ (เฉพาะทาง Portal · ทาง Codex device-code ❓)</td><td>นับรวมในลิมิตของแพ็กเกจเดิม ไม่ได้โควตาเพิ่ม · Portal คิดเงินของโมเดลที่ Nous จัดให้แยกต่างหาก ("billed against your Nous subscription") · ห้ามนำ token Codex CLI จาก Mac มาใส่</td></tr>
+<tr><td><b>Claude native login</b></td><td class="bad">กลาง–สูง</td><td>ต้องเป็น Max + ซื้อ extra usage · Pro ใช้ไม่ได้ · Hermes ยืม login ของ Claude Code และอาจทำให้ refresh token ของ Claude Code เสีย · <b>ห้ามใช้</b></td></tr>
+<tr><td><b>DirectSDK plugin</b> (NousResearch "official" v0.4.1)</td><td class="warn">กลาง</td><td>ทุกเทิร์นคิดจาก Agent SDK allowance ของแพ็กเกจ · รับ Pro ได้ · ใช้บัญชีที่ <code>claude</code> ล็อกอินอยู่ · ผลกระทบสูงถ้าเป็นบัญชีเดียวกับทีม x-team · <b>ห้ามบนบัญชีหลัก</b></td></tr>
+<tr><td><b>API key</b> (ผูก Console org กับแพ็กเกจ)</td><td class="ok">ต่ำ</td><td>เครดิตรายเดือน Max $100 / Ultra $200 · Pro ไม่มีเครดิต (จ่ายตามใช้) · เครดิตหมดอายุทุกรอบ ไม่ทบ · เคลมได้หลังอยู่แพ็กเกจ 7 วัน · ใช้ provider <code>anthropic</code> ของ Hermes ไม่ใช่ plugin (plugin ตัด API key ทิ้ง)</td></tr>
+</table>
+<blockquote>Anthropic: "Anthropic does not permit third-party developers to offer Claude.ai login into their own applications, or to route requests through Free, Pro, Max, or Ultra plan credentials on behalf of their users." · "Anthropic reserves the right to take measures to enforce these restrictions and may do so without prior notice."</blockquote>
+<ul>
+<li>ถ้าเคยลง Hermes ใกล้ Claude Code ให้ตั้ง <code>auth.adopt_external_logins: false</code> · และห้ามลง Hermes บนเครื่องที่ล็อกอิน Claude Code ของพี่</li>
+<li>เครดิต API ครอบคลุม Claude API, Managed Agents, Agent SDK, Console Playground · <b>ไม่รวม Claude Code</b></li>
+</ul></div>
+<div class="card"><h3>ต่อ ComfyUI</h3><ul>
+<li>ใช้ optional skill ทางการ <code>comfyui</code> ของ Hermes (ใช้ <code>comfy-cli</code> + REST/WebSocket ไปที่ <code>http://127.0.0.1:8188</code>) · ไม่ต้องหา MCP server ภายนอก</li>
+<li><b>ปิด</b> <code>auto_fix_deps.py</code> และการสั่งติดตั้ง custom node โดย agent (node ติดตั้งโค้ดอะไรก็ได้)</li>
+<li>ก่อนสั่งเรนเดอร์ ให้ปลด LLM ออกจาก VRAM · ComfyUI มี <code>POST /free</code> · Ollama ใช้ <code>keep_alive:0</code> · ห้ามให้ LLM กับโมเดลวิดีโออยู่ใน VRAM พร้อมกัน</li>
+<li>LLM สำรอง: Qwen3.5-9B Q4 (Apache-2.0; BFCL-V4 66.1 เป็นตัวเลขจากผู้ผลิต) ใช้ตอน ComfyUI ว่าง · Qwen3.6-35B-A3B ให้รันบน RAM</li>
+</ul></div>
+<div class="card"><h3>Telegram bot แยก</h3><ul>
+<li>ขอ token ใหม่จาก BotFather ให้ Hermes ตัวเดียว · <b>ห้ามเอา token ของ xfiles-bot ไปใส่</b> เพราะ "Telegram will reject concurrent polling for the same token" (409)</li>
+<li>ตั้ง <code>TELEGRAM_ALLOWED_USERS</code> เป็นเลข user ID ของพี่ · ไม่ตั้ง = ปฏิเสธทุกคน</li>
+<li>บอทนี้เป็นช่อง "เรนเดอร์ + ส่งพรีวิว" เท่านั้น · ไม่แตะ repo x-files หรือ VPS</li>
+<li>รัน gateway ได้ทีละตัวต่อ token (Desktop app กับ service พร้อมกันจะชนกัน)</li>
+</ul></div>
+
+<h2>4 · งานอัตโนมัติที่อยากได้</h2>
+<div class="card"><table>
+<tr><th>งาน</th><th>ทำได้อัตโนมัติ</th><th>ต้องมีคนกด</th><th>ห้ามอัตโนมัติ</th></tr>
+<tr><td>social ad</td><td>ร่างสคริปต์ + แคปชั่น · ส่งพรีวิวเข้า Telegram</td><td>ตรวจก่อนโพสต์ · เปิดป้าย AI · โพสต์เอง</td><td>บอทโพสต์ใน TikTok/Shopee</td></tr>
+<tr><td>เจนรูป</td><td>เรนเดอร์เป็นชุด · ตั้งชื่อ/จัดโฟลเดอร์</td><td>ตรวจรูปก่อนใช้</td><td>—</td></tr>
+<tr><td>ละคร</td><td>shot list · เรนเดอร์ keyframe/คลิป</td><td>อนุมัติทุกคลิป · เซ็นยินยอมใบหน้า</td><td>ใช้ใบหน้าคนอื่นโดยไม่ยินยอม</td></tr>
+<tr><td>โฆษณาเพจ Facebook</td><td>เตรียมโพสต์ร่างผ่าน Pages API ทางการหลังพี่อนุมัติ (ตั้งเวลา 10 นาที–30 วัน)</td><td>ยิงโฆษณา/ใช้เงิน (Marketing API ยังไม่ได้ค้น)</td><td>บอทบนเบราว์เซอร์ · ดึงข้อมูลอัตโนมัติ</td></tr>
+<tr><td>ปักตะกร้า</td><td>—</td><td>คนทำเองในแอป</td><td>บอทปักตะกร้าใน TikTok/Shopee (ข้อห้ามนี้เป็น "ข้อควรระวัง" ยังไม่มีกฎ Shopee TH ที่อ้างได้)</td></tr>
+<tr><td>คลิป affiliate</td><td>เรนเดอร์จากรูปสินค้าจริง · ใส่แคปชั่น</td><td>โพสต์เอง · ใส่ป้าย AI</td><td>ซื้อผ่านลิงก์ตัวเอง (Shopee MY ระบุว่าผิด)</td></tr>
+</table>
+<small>ไม่มี "อนุมัติก่อนโพสต์" ในตัว Hermes · approval ในตัวคุมแค่คำสั่งอันตราย (โหมด smart/manual/off) · ต้องออกแบบเอง: ไม่ให้ Hermes ถือรหัสโพสต์เลย</small></div>
+<div class="card stop"><h3>กฎแพลตฟอร์ม (คำพูดตรงจากหน้าทางการ)</h3><ul>
+<li><b>TikTok</b> (<a href="https://www.tiktok.com/safety/en/policies-and-engagement/integrity-authenticity">หน้าจริง</a>): "We strictly prohibit automation tools, scripts, or other tricks designed to bypass our systems. These can result in content removal, account bans, or other enforcement." · ขอบเขตคือเครื่องมือที่ออกแบบมาเลี่ยงระบบ ไม่ใช่ห้ามตั้งเวลาทุกแบบ · "You can have multiple accounts … but not to deceive others or break the rules."</li>
+<li><b>Meta</b> (ข้อกำหนดฉบับไทย มีผล 1 ม.ค. 2025) §3.1 "สร้างเพียงบัญชีเดียว (ของคุณเอง) และใช้บัญชีเพื่อวัตถุประสงค์ส่วนตัว" · §3.2 "คุณไม่สามารถเข้าถึงหรือรวบรวมข้อมูลจากผลิตภัณฑ์ของเราโดยใช้วิธีการอัตโนมัติ (โดยไม่ได้รับสิทธิ์การอนุญาตจากเราล่วงหน้า)"</li>
+<li><b>Shopee SG</b> (ใช้เป็นตัวแทน ไม่ใช่ไทย) s1.4(a): "is not a computer generated user, such as a robot, spider, computer script or other automated" · s6.4(b): "use robots or other automated query tools, computer generated search requests;"</li>
+<li><b>Shopee MY</b>: "Promoting/ buying from own affiliated links" ถือเป็นพฤติกรรมฉ้อโกง</li>
+<li><b>Shopee TH affiliate:</b> <span class="warn">ยังไม่ยืนยัน</span> (ข้อกำหนดอยู่หลังล็อกอิน) · ดูกล่องหัวข้อ 11</li>
+</ul></div>
+
+<h2>5 · โมเดลวิดีโอ/ภาพ</h2>
+<div class="card"><table>
+<tr><th>โมเดล</th><th>license</th><th>ใส่ 12 GB</th><th>ใช้กับงาน</th></tr>
+<tr><td><b>Wan 2.2</b> (5B / 14B GGUF)</td><td class="ok">Apache-2.0</td><td>ได้ (ผลวิจัยรอบ 14 พ.ย. · นอกขอบเขตที่ law ตรวจรอบนี้)</td><td>คลิป affiliate จากรูปสินค้า (I2V ต่อช็อตละ 5 วิ) · ตัวหลัก</td></tr>
+<tr><td><b>MiniMax H3</b></td><td class="warn">H3 Community License · ต่ำมีเงื่อนไข (หัวข้อ 6)</td><td>ได้ที่ความละเอียดต่ำ ~416–624p (ทดสอบบนการ์ด 12 GB ของคนอื่น · เวลาเหล่านี้ law ไม่ได้ตรวจ · ไม่มีรายงาน 5070)</td><td>ละคร (reference-to-video) · คุณภาพสูงสุดที่ใส่ได้</td></tr>
+<tr><td><b>H3-Tiny</b> (14–17B)</td><td class="warn">license เดียวกับ H3</td><td>int8 14.1–16.8 GiB · ทดสอบบน H200 เท่านั้น</td><td>ทางเลือกเสริม</td></tr>
+<tr><td><b>LongCat-Video</b> 13.6B</td><td class="ok">MIT (น้ำหนักของ Meituan) · ไม่มีสิทธิบัตร/เครื่องหมายการค้า</td><td>ยังไม่ทดสอบ</td><td>T2V / I2V / ต่อคลิป</td></tr>
+<tr><td><b>LongCat-Video-Avatar 1.6</b></td><td class="ok">MIT · ตัวแยกเสียง Kim_Vocal_2 ไม่ทราบ license (ข้ามได้ถ้าเสียงสะอาด)</td><td>ยังไม่ทดสอบ</td><td>ลิปซิงก์จากเสียง (ภาษาไทยยังไม่ทราบคุณภาพ)</td></tr>
+<tr><td><b>Wan-Animate-2 14B</b></td><td class="ok">Apache-2.0</td><td>ยังไม่ยืนยัน</td><td>ละคร (รูปอ้างอิง + วิดีโอนำทาง)</td></tr>
+<tr><td><b>FLUX.2 klein base 4B / Z-Image base</b></td><td class="ok">Apache-2.0</td><td>เทรน LoRA ได้ 12 GB (BFL ระบุขั้นต่ำ)</td><td>โมเดลภาพสำหรับ keyframe หน้าตัวละคร</td></tr>
+</table></div>
+<div class="card key"><h3>สูตร ComfyUI สำหรับ 5070</h3><ul>
+<li>ใช้ <b>v0.46.0 portable</b> (Python 3.13 + PyTorch CUDA 13.0) + ไดรเวอร์ NVIDIA ล่าสุด · <b>อย่าใช้ build cu126</b> ("DO NOT USE THIS ON NEWER 20 SERIES AND ABOVE GPUS")</li>
+<li>NVFP4 เร็วขึ้น ~2 เท่าบน RTX 50 เฉพาะเมื่อใช้ PyTorch cu130 · ไม่งั้นอาจช้ากว่า fp8 ถึง 2 เท่า</li>
+<li>ติดตั้ง ComfyUI-Manager (ต้อง ≥ 3.38 และ core ≥ 0.3.76) + ComfyUI-GGUF + KJNodes · เริ่มด้วย <code>--reserve-vram 1-2</code></li>
+<li class="bad"><b>อย่าเปิด <code>--use-sage-attention</code> ทั้งระบบ:</b> ทำให้ภาพดำกับบางโมเดล (Qwen, Wan) และ wheel ในเอกสารไม่ตรงกับ portable (py3.13/cu130) · ถ้าจะใช้ ให้ใช้ KJNodes "Patch Sage Attention" ทีละโมเดลหลังเทียบกับเฟรมที่ไม่ใช้ (โพสต์จากชุมชน)</li>
+<li>ปักรุ่น ComfyUI เมื่อใช้งานได้แล้ว</li>
+</ul></div>
+
+<h2>6 · เงื่อนไขการใช้ H3</h2>
+<div class="card alert"><p><b>สรุป:</b> เนื้อ license ตีความได้สองแบบ แต่ MiniMax staff ตอบเป็นลายลักษณ์อักษรใน HF discussion #12 (6, 13, 18 ส.ค. 2026) ว่าครีเอเตอร์ในประเทศที่ไม่ถูกยกเว้นเผยแพร่ผลงานทั่วโลกได้โดยใส่เครดิต · ไทยอยู่ในพื้นที่ที่อนุญาต (ยกเว้นเฉพาะ EU, UK, เกาหลีใต้, สหรัฐฯ) · ความเสี่ยง <span class="ok">ต่ำ ถ้าทำตามเงื่อนไข</span> · พี่ <b>ยอมรับความเสี่ยงนี้แล้ว เมื่อ 25 พ.ย. 2026</b></p>
+<blockquote>"Yes, You don't need license. … It is required to mention MiniMax‑H3 either at the beginning or the end." (ผ่อนปรน 18 ส.ค.: "Platform AI disclosure + MiniMax‑H3 credit in caption/description is compliant; in‑video burned‑in text is not required.")</blockquote>
+<ol>
+<li><b>ติดป้าย AI ทุกคลิป</b> (AUP ข้อ 12: ต้องบอกชัดเจนว่าเป็นเนื้อหาที่เครื่องสร้าง) = ป้าย AI ของแพลตฟอร์ม + บรรทัดในแคปชั่น</li>
+<li><b>ใส่เครดิต "MiniMax H3" ใน caption/description</b></li>
+<li><b>เก็บสำเนาลงวันที่</b> ของ discussion #12 (+ LICENSE และหน้า comfy.org/minimax/license)</li>
+<li><b>ห้ามเปิดบริการเจนด้วย H3 ให้คนอื่น</b> (ภาระ §V.2/§V.5 และการติดแบรนด์บน UI §IV.2 เริ่มตอนนั้น)</li>
+<li><b>H3-Image มีเพดาน $1M</b> ต่อปี (รวมรายได้ของพี่และบริษัทในเครือ หรือถ้าให้บริการ hosted แก่บุคคลที่สาม) · ส่วนวิดีโอ H3 เพดานคือ $20M · "Annualized Revenue" ไม่มีนิยามในไฟล์</li>
+<li><b>ห้ามใช้ผลลัพธ์ H3 ไปเทรนโมเดลอื่น</b> (§V.3) เช่น เทรน Wan LoRA จากคลิป H3</li>
+<li>ถ้าใช้ H3 กับใบหน้าคนจริง (R2V) ยังต้องมีหนังสือยินยอมตาม PDPA</li>
+</ol>
+<p><b>เรื่องหน้าเอกสาร ComfyUI:</b> docs.comfy.org เขียนว่า "Commercial use of locally generated outputs requires a MiniMax commercial license" · ขัดกับตัว LICENSE (§II ให้สิทธิ์ royalty-free · §IV.1 ขออนุญาตเฉพาะเมื่อรายได้เกิน $20M) · ขัดกับหน้า comfy.org/minimax/license (ส.ค. 2026: "generally permits commercial use, provided … no more than $20 million") · และขัดกับ staff · law สรุป: <b>ไม่ต้องซื้อ license ต่ำกว่า $20M ในพื้นที่ที่อนุญาต</b></p></div>
+
+<h2>7 · จำหน้า / LoRA</h2>
+<div class="card"><h3>3 ทาง</h3><table>
+<tr><th>ทาง</th><th>รายละเอียด</th><th>สถานะ</th></tr>
+<tr><td><b>1. LoRA บนโมเดลภาพ → keyframe → Wan I2V</b> (แนะนำ)</td><td>FLUX.2 klein base 4B หรือ Z-Image base · เทรนด้วย AI-Toolkit หรือ musubi-tuner บน Windows · BFL: 1500–3000 steps, "1-3 hours on consumer GPUs" (การ์ด 12 GB) · ผู้ใช้ 3060 รายงาน 512px 2–3 ชม. / 1024px 6–7 ชม.</td><td>ไม่มีใครวัดบน 5070</td></tr>
+<tr><td><b>2. Wan 2.2 LoRA ตรงๆ</b></td><td>เป็นไปได้แต่เปราะบน 12 GB · กรณีที่พบ (4070 + 64 GB) ล้มเลิกหลัง 3 วัน · ควรเป็นการทดลอง 1 วัน ไม่ใช่แผนผลิต</td><td>ยังไม่มีกรณีสำเร็จที่มีเวลา</td></tr>
+<tr><td><b>3. ไม่เทรน (reference)</b></td><td>FLUX.2 klein multi-reference · Wan-Animate-2 · H3 R2V (ใบหน้าคนจริงต้องมี consent)</td><td>เหมาะกับหน้าแบบครั้งเดียว</td></tr>
+</table>
+<small>แผนแนะนำ: LoRA สำหรับตัวละครหลักที่กลับมาทุกตอน · multi-reference สำหรับหน้าที่ใช้ครั้งเดียว (เป็นข้อเสนอของ vegapunk ยังไม่มี benchmark)</small></div>
+<div class="card"><h3>เทรนเนอร์</h3><ul>
+<li><b>musubi-tuner:</b> Wan2.2 เฉพาะรุ่น 14B ("only for 14B models") · "Windows compatibility confirmed" · RAM แนะนำ 64 GB ขึ้นไป · ใช้ <code>--blocks_to_swap</code> ทีละ expert (Windows ถ้าใช้ <code>--offload_inactive_dit</code> ต้องใช้ RAM ~96 GB จึงไม่เหมาะ 64 GB)</li>
+<li><b>AI-Toolkit:</b> รองรับ Wan2.2 T2V-A14B / I2V-A14B / TI2V-5B, Z-Image, FLUX.2 klein base 4B · รันบน Windows · "Webp currently has issues"</li>
+<li><b>diffusion-pipe:</b> ต้องใช้ WSL2 ("difficult or impossible … on native Windows") · 5B ทำได้เฉพาะ t2v/t2i</li>
+</ul></div>
+<div class="card"><h3>สูตรชุดรูปเทรน</h3><ul>
+<li>รูปคมชัด 20–30 รูป (ตัวเลขจากชุมชน) · ~50% ใบหน้า–ไหล่ · 30% ครึ่งตัว · 20% เต็มตัว · หน้าตรง / เฉียง ซ้าย-ขวา / ด้านข้าง / ก้ม-เงย</li>
+<li>แสงอย่างน้อย 3 แบบ · เปลี่ยนชุด/ฉากหลัง · ไม่มีแว่นกันแดดหรือฟิลเตอร์ · ต้นฉบับ ≥1024px</li>
+<li>แคปชั่น = โทเคนหายาก + ชนิด (เช่น "ohwx woman") + เสื้อผ้า/ฉาก/ท่า · <b>ไม่บรรยายใบหน้า</b></li>
+<li>ทดสอบที่ 512 ก่อน แล้ว 768/1024 · ชุดข้อมูล Wan ≤ 960×544 · เทรนบน base แล้วเจนด้วย Turbo/distilled + LoRA</li>
+</ul></div>
+<div class="card stop"><h3>ห้ามใช้เชิงพาณิชย์ + กฎหมาย</h3><ul>
+<li><b>PuLID / InstantID ห้ามใช้ทำโฆษณาที่ขายจริง:</b> ใช้โมเดล InsightFace ซึ่ง "available for non-commercial research purposes only" (รวมที่ดาวน์โหลดอัตโนมัติ) · license MIT ของ node ไม่ช่วยแก้</li>
+<li><b>PDPA ม.26:</b> ข้อมูลชีวมิติเป็นข้อมูลอ่อนไหว ห้ามเก็บโดยไม่มี "explicit consent" รวม "facial recognition data" (ใช้คำแปลไม่เป็นทางการ ยังไม่เปิดฉบับราชกิจจาฯ) · LoRA ที่สร้างให้จำหน้าหนึ่งคน <i>น่าจะ</i> เข้าข่าย (ตีความ ยังไม่มีแนวปฏิบัติ PDPC) · ขอ consent เป็นลายลักษณ์อักษร</li>
+<li><b>พ.ร.บ.คอมพิวเตอร์ ม.16</b> (แก้ไข 2560): ภาพของผู้อื่นที่ตัดต่อ/ดัดแปลงด้วยวิธีอิเล็กทรอนิกส์ จนน่าจะทำให้เสียชื่อเสียง ถูกดูหมิ่น เกลียดชัง หรือได้รับความอับอาย → จำคุกไม่เกิน 3 ปี ปรับไม่เกิน 200,000 บาท · ห้ามทำ LoRA คนดังหรือคนแปลกหน้า</li>
+<li><b>สคบ. (OCPB)</b> ตามบทความ Tilleke &amp; Gibbins 12 มี.ค. 2026: ประกาศแนวทางโฆษณาที่สร้างด้วย AI มีผลแล้ว · ป้ายตัวอย่าง "Image created by AI" / "Video created by AI" ต้องเห็น/ได้ยิน/อ่านได้ชัด · ใช้ป้ายนี้ทุกคลิปเป็นค่าเริ่มต้น</li>
+<li><b>ฟอร์ม consent ควรมี:</b> วัตถุประสงค์ (เทรน AI + โฆษณา/ละครที่สร้าง) · แพลตฟอร์ม · ระยะเวลา · การถอนความยินยอม + ลบชุดรูปและ LoRA</li>
+</ul></div>
+
+<h2>8 · เสียงพากย์ไทย</h2>
+<div class="card alert"><p><b>ไม่มีโมเดลโคลนเสียงไทยบนเครื่องที่ใช้เชิงพาณิชย์ได้ชัดเจน → ใช้ TTS แบบจ่ายเงิน</b><br><small>หมายเหตุ: iApp ChindaTTS เป็นตัวเลือกเดิมของโปรเจกต์ ai_factory ไม่ได้มาจากงานวิจัยนี้ และ law ไม่ได้ตรวจ</small></p>
+<table>
+<tr><th>โมเดล</th><th>ปัญหา</th></tr>
+<tr><td>OpenJaiTTS-v1.0</td><td>cc-by-nc-4.0 (gated)</td></tr>
+<tr><td>F5-TTS-THAI</td><td>การ์ดบอก CC-BY-4.0 แต่ฐาน SWivid/F5-TTS เป็น cc-by-nc-4.0</td></tr>
+<tr><td>omnivoice-thai</td><td>การ์ดบอก Apache-2.0 แต่ฐาน OmniVoice "licensed under the CC-BY-NC"</td></tr>
+<tr><td>KhanomTan</td><td>law ยังไม่ได้ตรวจ</td></tr>
+</table>
+<small>การ์ดของโมเดลที่ fine-tune ไม่สามารถลบข้อห้าม NC ของฐานได้ (law ตีความ ความมั่นใจสูง)</small></div>
+
+<h2>9 · ความปลอดภัย (checklist)</h2>
+<div class="card key"><ul>
+<li>☐ สร้าง <b>ผู้ใช้ Windows แยก แบบไม่ใช่ admin</b> สำหรับ Hermes + ComfyUI · ไม่มีโปรไฟล์เบราว์เซอร์/ตัวจัดการรหัสผ่าน/session Google, Meta, TikTok, Shopee</li>
+<li>☐ ติดตั้ง Hermes ด้วย <code>-SkipComputerUse</code> (cua-driver เปิดเป็นค่าเริ่มต้นบน Windows)</li>
+<li>☐ <code>approvals.mode: manual</code> · ห้าม <code>off</code> / <code>--yolo</code> · <code>cron_mode: deny</code></li>
+<li>☐ ComfyUI ฟังที่ <code>127.0.0.1:8188</code> เท่านั้น · ไม่ใช้ <code>--listen 0.0.0.0</code> · ไม่เปิดพอร์ต (CSA: แคมเปญโจมตี ComfyUI สาธารณะ "over 1,000" เครื่อง · Manager ≥ 3.38, core ≥ 0.3.76) · เข้าจาก Mac ผ่าน Tailscale/VPN เท่านั้น</li>
+<li>☐ ปักรุ่น Hermes v0.23.4 (v0.23.2 ขึ้นไปไม่โดน GHSA-p22p-9ph6-gmrh / CVE-2026-130164) · ตามดู GHSA/NVD</li>
+<li>☐ อนุญาตเฉพาะ custom node ที่เลือกเอง · ไม่ให้ agent ติดตั้ง ("ComfyUI_LLMVISION and ultralytics" เคยมีช่องโหว่)</li>
+<li>☐ จำกัดสิทธิ์โฟลเดอร์ Hermes (ChatGPT token อยู่ที่ <code>auth.json</code> · ชื่อคำสั่ง Windows ที่เทียบ <code>chmod 600</code> ไม่ถูกระบุในเอกสาร)</li>
+<li>☐ <b>jinbe ตรวจก่อน</b> ให้รหัสบัญชีใดๆ (เช่น token เพจ Meta) หรือสิ่งที่เกี่ยวกับเงิน</li>
+<li>☐ ถ้าจะใช้ Claude ใน Hermes: ใช้ API key แยก + login Claude แยกจากบัญชีทีม · ไม่ import token Codex CLI ของ Mac</li>
+</ul></div>
+
+<h2>10 · แผนติดตั้งทีละขั้น (ข้อเสนอ)</h2>
+<div class="card"><p><span class="tag" style="background:#fff0d6;color:var(--warn)">ร่างของทีม · ไม่ได้มาจาก law · อนุมัติเป็นรายเฟส</span></p><p><small>ร่างจากไฟล์วิจัย · ทุกเฟสรอพี่อนุมัติก่อนเริ่ม · ยังไม่ได้ลงมืออะไรบนเครื่อง PC</small></p>
+<table>
+<tr><th>เฟส</th><th>ทำอะไร</th><th>ต้องได้</th></tr>
+<tr><td>0 · ตัดสินใจ</td><td>H3 ยอมรับแล้ว (25 พ.ย.) · เลือกทาง LLM (ChatGPT ผ่าน Portal) · เลือก TTS จ่ายเงิน (ChindaTTS เป็นตัวเลือกเดิมของโปรเจกต์ ไม่ได้มาจากงานวิจัยนี้ · law ไม่ได้ตรวจ)</td><td>พี่ตอบ</td></tr>
+<tr><td>1 · เตรียมเครื่อง</td><td>ตรวจเครื่องแบบอ่านอย่างเดียว (ดิสก์ · M.2 · ไดรเวอร์) · สร้าง Windows user แยก non-admin · ยืนยันว่า PC ไม่มี login Claude Code</td><td>checklist หัวข้อ 9 ข้อแรกผ่าน</td></tr>
+<tr><td>2 · ComfyUI</td><td>ComfyUI v0.46.0 portable + Manager/GGUF/KJNodes · ฟัง 127.0.0.1 · ทดสอบ Wan 2.2 I2V จากรูปสินค้าจริง · <b>วัดเวลาจริงบน 5070</b> (ยังไม่มีใครวัด)</td><td>คลิปทดสอบ + เวลา</td></tr>
+<tr><td>3 · Hermes</td><td>ติดตั้ง v0.23.4 ด้วย <code>-SkipComputerUse</code> · login ChatGPT ผ่าน Nous Portal (<b>ยังไม่ยืนยัน: ค่า Nous Portal</b> · ตรวจก่อน) · <code>approvals.mode: manual</code> · Telegram bot ใหม่ + allowlist</td><td>ตอบแชทใน Telegram ได้</td></tr>
+<tr><td>4 · เชื่อม ComfyUI</td><td>เปิด skill <code>comfyui</code> · ปิด <code>auto_fix_deps.py</code> · ส่งพรีวิวให้พี่อนุมัติทุกคลิป · คนโพสต์เอง + ป้าย AI</td><td>ผังงานครบหนึ่งรอบ</td></tr>
+<tr><td>5 · H3 (ยอมรับความเสี่ยงแล้ว)</td><td>ติดตั้ง H3 ที่ความละเอียดต่ำ · เก็บสำเนา LICENSE/discussion #12 · ใส่ป้าย AI + เครดิตใน caption · วัดเวลาจริง</td><td>ผลทดสอบ + สำเนาเก็บแล้ว</td></tr>
+<tr><td>6 · ใบหน้า/LoRA</td><td>ขอหนังสือยินยอมก่อน · ทดลอง 1 วัน: LoRA klein/Z-Image → keyframe → Wan I2V · ดูว่าหน้าคงอยู่ตอนขยับหัวไหม</td><td>ชุด consent + ผลทดลอง</td></tr>
+<tr><td>7 · ก่อนให้รหัสบัญชี</td><td>jinbe ตรวจก่อนให้ token เพจ Meta หรือสิ่งที่เกี่ยวกับเงิน</td><td>jinbe ผ่าน</td></tr>
+</table></div>
+
+<h2>11 · ยังไม่ยืนยัน + แหล่งอ้างอิง</h2>
+<div class="card unk"><h3>⚠ ยังไม่ยืนยัน (อย่าถือเป็นข้อเท็จจริง)</h3><ul>
+<li><b>Shopee TH affiliate T&amp;C</b> (บอท/หลายบัญชี/AI/ซื้อเอง): อยู่หลังล็อกอิน ยังไม่ได้อ่าน · ต้องให้พี่เปิดเองหรือ luffy อ่านผ่าน Chrome</li>
+<li>Hermes "OpenAI Codex" device-code ครอบคลุมโดยรายชื่อพาร์ตเนอร์ของ OpenAI หรือไม่</li>
+<li>ค่า Nous Portal เมื่อใช้ "Continue with ChatGPT": เอกสารไม่ได้ระบุ · ต้องดูที่หน้า signup</li>
+<li>มิเตอร์ที่คิดจริงกรณี Claude (ดูได้จาก billing dashboard ของ Anthropic เท่านั้น) · เครดิต API ใช้กับ <code>claude -p</code> ได้หรือไม่ (เอกสารสองหน้าขัดกัน)</li>
+<li>Hermes issue #6475 ยังไม่ได้เปิดอ่าน · CVE-2026-14625 และ CVE-2026-9353 NVD ไม่ระบุรุ่นที่แก้</li>
+<li>เลขที่/วันที่ประกาศ สคบ. เรื่องโฆษณา AI และข้อความราชกิจจาฯ · ฉบับภาษาไทยของ PDPA ม.26 · แนวปฏิบัติ PDPC เรื่องใช้รูปหน้าเทรน AI</li>
+<li>คำพูดเรื่อง "TikTok Content Posting API: utility tool ... Not acceptable" มาจาก NOTE-0080 law ไม่ได้ตรวจซ้ำรอบนี้</li>
+<li>Wan-Animate-2 บน 12 GB · LongCat-Video 12 GB · เวลาเทรน LoRA/เรนเดอร์บน 5070 ทั้งหมด (ยังไม่มีใครวัด) · KhanomTan · license ของ Kim_Vocal_2</li>
+<li>H3: เวลาทดสอบบน 12 GB (discussion #35/#75) และขนาดไฟล์ law ไม่ได้ตรวจ · ตัวเลข BFCL เป็นของผู้ผลิต</li>
+<li>ไม่ได้ค้นกฎ Meta Marketing API (โฆษณาเสียเงิน) · ให้คนยิงโฆษณาเอง</li>
+</ul></div>
+<div class="card"><h3>แหล่งอ้างอิง</h3><ul>
+<li><a href="https://github.com/NousResearch/hermes-agent">Hermes Agent (GitHub)</a> · <a href="https://hermes-agent.nousresearch.com/docs/integrations/providers">providers</a> · <a href="https://hermes-agent.nousresearch.com/docs/getting-started/platform-support">platform support</a> · <a href="https://hermes-agent.nousresearch.com/docs/user-guide/messaging/telegram">Telegram</a></li>
+<li><a href="https://code.claude.com/docs/en/legal-and-compliance">Anthropic legal-and-compliance</a> · <a href="https://support.claude.com/en/articles/15036540">Help Center 15036540</a> · <a href="https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers.md">API credits for subscribers</a> · <a href="https://www.anthropic.com/legal/consumer-terms">Consumer Terms</a></li>
+<li><a href="https://learn.chatgpt.com/docs/sign-in-with-chatgpt">Sign in with ChatGPT</a> · <a href="https://openai.com/policies/row-terms-of-use">OpenAI Terms</a></li>
+<li><a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/raw/main/LICENSE">H3 LICENSE</a> · <a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/discussions/12">discussion #12</a> · <a href="https://comfy.org/minimax/license">comfy.org/minimax/license</a> · <a href="https://huggingface.co/MiniMaxAI/MiniMax-H3-Image/raw/main/LICENSE">H3-Image LICENSE</a></li>
+<li><a href="https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0">ComfyUI v0.46.0</a> · <a href="https://blog.comfy.org/p/new-comfyui-optimizations-for-nvidia">NVFP4 blog</a> · <a href="https://github.com/Comfy-Org/ComfyUI/discussions/11583">SageAttention #11583</a> · <a href="https://storage-asset.msi.com/datasheet/mb/sg/MPG-Z890I-EDGE-TI-WIFI.pdf">MSI datasheet</a></li>
+<li><a href="https://huggingface.co/meituan-longcat/LongCat-Video">LongCat-Video</a> · <a href="https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6">LongCat-Avatar</a> · <a href="https://huggingface.co/Qwen/Qwen3.5-9B">Qwen3.5-9B</a></li>
+<li><a href="https://github.com/kohya-ss/musubi-tuner">musubi-tuner</a> · <a href="https://github.com/ostris/ai-toolkit">AI-Toolkit</a> · <a href="https://github.com/tdrussell/diffusion-pipe">diffusion-pipe</a> · <a href="https://docs.bfl.ai/flux_2/flux2_klein_training">BFL klein training</a> · <a href="https://github.com/deepinsight/insightface">InsightFace</a></li>
+<li><a href="https://www.tiktok.com/safety/en/policies-and-engagement/integrity-authenticity">TikTok integrity</a> · <a href="https://www.facebook.com/legal/terms">Meta Terms</a> · <a href="https://developers.facebook.com/docs/pages-api/posts">Meta Pages API</a> · <a href="https://help.shopee.sg/portal/4/article/77189">Shopee SG affiliate</a></li>
+<li><a href="https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-workload-exposure-cryptomining-20260408/">CSA ComfyUI</a> · <a href="https://www.tilleke.com/insights/thailands-advertising-guidelines-targeting-ai-generated-content/2/">Tilleke OCPB</a> · <a href="https://pdpathailand.com/pdpa/content_eng/article26_eng.php">PDPA s.26 (unofficial)</a></li>
+</ul>
+<small>ไฟล์ต้นทาง: notes/90_plans/research-2026-11-25-hermes-local-ai-pc/ (law-a, law-b, law-c)</small></div>
+
+<div class="answer">ตอบกลับได้แบบนี้: <b>"ตามแนะนำ"</b> หรือแก้เฉพาะข้อ · ข้อที่ต้องตัดสิน: ใช้ ChatGPT ผ่าน Portal หรือไม่ · TTS จ่ายเงินตัวไหน (H3 ยอมรับแล้ว)</div>
+
+<p><small>25 พ.ย. 2026 · ตรวจข้อเท็จจริงโดย law (ยกเว้นหัวข้อ 10 ร่างของทีม และข้อที่ติดป้ายในหัวข้อ 11)</small></p>
+</main></body></html>
